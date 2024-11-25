@@ -457,7 +457,8 @@ body.dark-theme {
 }
 
 .home__social-link {
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: var(--black-color-light);
     color: var(--white-color);
     font-size: 20px;
