@@ -446,7 +446,7 @@ body.dark-theme {
 }
 
 .home__social {
-    height: max-content;
+    height: 100px;
     position: absolute;
     left: -48px;
     top: 0;
@@ -457,6 +457,7 @@ body.dark-theme {
 }
 
 .home__social-link {
+    height: 35px;
     background-color: var(--black-color-light);
     color: var(--white-color);
     font-size: 20px;
