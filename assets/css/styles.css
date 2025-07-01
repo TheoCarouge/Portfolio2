@@ -7,7 +7,7 @@
 
     /* ===== Colors ===== */
     /*Color mode HueSaturationLightness*/
-    --first-color: hsl(14, 98%, 50%);
+    --first-color: hsl(218, 94%, 26%);
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
     --white-color: hsl(0, 0%, 95%);
@@ -105,7 +105,7 @@ img {
 
 /* ===== Variables Dark theme ===== */
 body.dark-theme {
-    --first-color: hsl(14, 80%, 50%);
+    --first-color: hsl(218, 94%, 26%);
     --black-color: hsl(0, 0%, 18%);
     --black-color-light: hsl(0, 0%, 30%);
     --title-color: hsl(0, 0%, 95%);
@@ -121,7 +121,7 @@ body.dark-theme {
 
 .dark-theme .section__title-1::after,
 .dark-theme .section__title-2::after {
-    background-color: hsla(14, 70%, 50%, .2);
+    background-color: hsla(218, 60%, 50%, .2);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line) {
@@ -130,7 +130,7 @@ body.dark-theme {
 
 .dark-theme .home__description b {
     background: linear-gradient(90deg,
-                hsla(14, 80%, 50%, .3),
+                hsla(218, 80%, 50%, .3),
                 hsla(14, 80%, 50%, 0));
 }
 
@@ -196,7 +196,7 @@ body.dark-theme {
     content: "";
     width: 40px;
     height: 28px;
-    background-color: hsla(14, 98%, 50%, .2);
+    background-color: hsla(218, 98%, 50%, .2);
     position: absolute;
     top: -4px;
     right: -8px;
@@ -386,6 +386,56 @@ body.dark-theme {
     width: 25%;
 }
 
+/* Section Showreel */
+#showreel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#showreel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showreel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.showreel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.showreel__scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 /* ===== HOME ===== */
 .home__container {
     padding-top: 32px;
@@ -485,8 +535,8 @@ body.dark-theme {
 
 .home__description b {
     background: linear-gradient(90deg,
-                hsla(14, 98%, 50%, .3),
-                hsla(14, 98%, 50%, 0));
+                hsla(218, 98%, 50%, .3),
+                hsla(218, 98%, 50%, 0));
 }
 
 .home__scroll {

@@ -67,6 +67,27 @@
 
 <!-- ===== MAIN ===== -->
 <main class="main">
+    <!-- ===== SHOWREEL ===== -->
+    <section class="showreel" id="showreel">
+        <video autoplay muted loop playsinline id="showreel-video">
+            <source src="assets/img/showreel.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+        
+        <div class="showreel-overlay">
+            <!-- <h1>Bienvenue sur mon portfolio</h1> -->
+            <p>Découvrez mes jeux et projets</p>
+        </div>
+
+        <a href="#home" class="showreel__scroll home__scroll">
+            <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+
+            <span class="home__scroll-text">Scroll Down</span>
+        </a>
+    </section>
+
     <!-- ===== HOME ===== -->
     <section class="home section" id="home">
         <div class="home__container container grid">
@@ -101,9 +122,10 @@
 
             <div class="home__info">
                 <p class="home__description">
-                    Passionné par la création de <b>jeux vidéo</b> avec une excellente expérience <b>UI/UX</b>,
-                    je viens de terminer mon bachelor en <b>Game Design & Creative Coding</b> et je suis à la recherche d’un emploi.
-                    Vous pouvez consulter les quelques jeux que j’ai créés au fil des années sur ma page web.
+                    Passionné par le <b>développement</b> avec une expérience pensée <b>UI/UX</b>, diplômé d'une 
+                    license en <b>Game Design & Creative Coding</b>, et fort d'un an d'expérience en Freelance, 
+                    je suis à la recherche de nouvelles opportunités. Vous pouvez consulter les divers projets 
+                    que j’ai créé / auquel j'ai pu participer au fil des années sur ma page web.
                 </p>
                 
                 <a href="#about" class="home__scroll">
@@ -121,7 +143,7 @@
     <section class="about section" id="about">
         <div class="about__container container grid">
             <h2 class="section__title-1">
-                <span>About Me.</span>
+                <span>À propos de moi.</span>
             </h2>
 
             <div class="about__profile">
@@ -138,16 +160,16 @@
                 
             <div class="about__info">
                 <p class="about__description">
-                    Durant ma formation, j'ai acquis une maîtrise du C# mais aussi sur Unity, compétences
-                    que j'ai pu mettre en pratique à travers divers projets personnels et professionnels. 
-                    Ces expériences m'ont permis de renforcer mon sens du détail ou encore ma capacité à polish les jeux.
-                    J'ai appris à travailler de manière autonome tout en collaborant efficacement avec mes collègues, et
-                    développé des compétences en gestion de projet, en collaboration d'équipe et en communication.
+                    Développeur passionné <b>diplômé</b> d’une licence en <b>Game Design & Creative Coding</b>, j’ai acquis de solides bases 
+                    sur <b>Unity, Unreal Engine et C#</b>. J’ai approfondi ces compétences en explorant plus profondément divers domaines
+                    comme le <b>C++, UEFN et Verse</b> pour Fortnite Creative. Curieux et rigoureux, j’applique les <b>principes SOLID</b>. 
+                    Mon expérience en <b>freelance</b> m’a permis d'étendre mon expertise en <b>HTML / CSS / JavaScript</b> ou en no-code sur <b>WordPress et Shopify</b>,
+                    où j'ai également travaillé sur de la gestion de <b>bases de données SQL</b>, et de la relation <b>client</b>.
                 </p>
                 
                 <ul class="about__list">
                     <li class="about__item">
-                        <b>My Skills Are</b> C#, Unity, C++, UE5, Fork, Git, Github, HTML, CSS, JS
+                        <b>Mes compétences</b> C#, Unity, C++, UE5, Fork, Git, Github, HTML, CSS, JS
                     </li>
                 </ul>
 
@@ -372,6 +394,38 @@
                 <div class="projects__image">
                     <img src="assets/img/project-5.png" alt="image" class="projects__img">
 
+                    <a href="https://carmidi.fr/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Site Web</h3>
+                    <h2 class="projects__title">Carrosserie du Midi</h2>
+
+                    <p class="projects__description">
+                        J’ai eu l’opportunité de collaborer avec Carrosserie du Midi, 
+                        un acteur reconnu de la mécanique et de la carrosserie installé 
+                        à Fabrègues, près de Montpellier. Leur équipe, déjà bien en place, 
+                        cherchait un soutien technique ponctuel pour faire évoluer leur site web.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://carmidi.fr/" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Voir
+                    </a>
+
+                    <a href="https://carmidi.fr/" target="_blank" class="projects__link">
+                        <i class="ri-chrome-line"></i> Voir
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/img/project-6.png" alt="image" class="projects__img">
+
                     <a href="https://pepp3rmint.itch.io/catch/" class="projects__button button">
                         <i class="ri-arrow-right-up-line"></i>
                     </a>
@@ -382,7 +436,7 @@
                     <h2 class="projects__title">Cat[ch]</h2>
 
                     <p class="projects__description">
-                        Cat[ch] est un jeu de dodgeball en multijoueur 
+                        Cat[ch] est un jeu de dodgeball en multijoueur
                         local dans un univers où l’ancienne Rome et l’arène
                         futuriste se rencontrent. Deux joueurs s’affrontent
                         dans une arène, le premier à atteindre trois points gagne.
@@ -395,38 +449,6 @@
                     </a>
 
                     <a href="https://pepp3rmint.itch.io/catch/" target="_blank" class="projects__link">
-                        <i class="ri-chrome-line"></i> Voir
-                    </a>
-                </div>
-            </article>
-
-            <article class="projects__card">
-                <div class="projects__image">
-                    <img src="assets/img/project-6.png" alt="image" class="projects__img">
-
-                    <a href="https://dimenchine.itch.io/investi-git/" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-                </div>
-
-                <div class="projects__content">
-                    <h3 class="projects__subtitle">Escape Game</h3>
-                    <h2 class="projects__title">Investi-Git</h2>
-
-                    <p class="projects__description">
-                        Un meurtre a été commis dans la ville de Greenfield,
-                        le PDG de Urban One, Patrick Johnson est mort le 15 janvier.
-                        À l'aide d'un logiciel de versionning uniquement (Fork / Github),
-                        votre objectif est de retrouver qui est le / la meurtrier/ère.
-                    </p>
-                </div>
-
-                <div class="projects__buttons">
-                    <a href="https://github.com/Investi-Git/Investi-Git/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> Voir
-                    </a>
-
-                    <a href="https://dimenchine.itch.io/investi-git/" target="_blank" class="projects__link">
                         <i class="ri-chrome-line"></i> Voir
                     </a>
                 </div>
